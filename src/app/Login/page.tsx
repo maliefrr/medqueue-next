@@ -1,8 +1,10 @@
+import AuthLayout from "@/components/authLayout"
+
 const page = () => {
   return (
-    <div>
-      <h1>Login Pages!!</h1>
-    </div>
+    <AuthLayout className="h-screen">
+        <h1>Login Pages!!</h1>
+    </AuthLayout>
   )
 }
 
