@@ -14,11 +14,21 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+
 
 const Page = () => {
   const [date, setDate] = useState<Date>()
   return (
-    <AuthLayout className="h-screen">
+    <AuthLayout>
         <div className="w-full p-10">
         <h1 className="text-2xl mb-5 text-center">Register</h1>
             <div className="mb-3">
@@ -36,10 +46,10 @@ const Page = () => {
                 <Input placeholder="Tempat Lahir" id="userPlaceBirth" className="mt-2"/>
               </div>
               <div className="w-1/2">
-              <label className="font-bold cursor-pointer hover:text-gray-500 duration-500">Tanggal Lahir</label>
+              <label className="font-bold cursor-pointer hover:text-gray-500 duration-500" htmlFor="tgl_lahir">Tanggal Lahir</label>
               <div className="mt-2">
                 <Popover>
-                  <PopoverTrigger asChild>
+                  <PopoverTrigger asChild id="tgl_lahir">
                     <Button
                       variant={"outline"}
                       className={cn(
@@ -71,8 +81,60 @@ const Page = () => {
             </div>
             </div>
             <div className="mb-3">
+              <div className="justify-between flex items-center gap-3">
+                <div className="w-1/2">
+                  <label htmlFor="userGender" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Jenis Kelamin</label>
+                  <Select>
+                    <SelectTrigger className="w-full" id="userGender">
+                      <SelectValue placeholder="Jenis Kelamin" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectGroup>
+                        <SelectLabel>Jenis Kelamin</SelectLabel>
+                        <SelectItem value="L">Laki - laki</SelectItem>
+                        <SelectItem value="P">Perempuan</SelectItem>
+                      </SelectGroup>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div className="w-1/2">
+                  <label htmlFor="goldar" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Golongan Darah</label>
+                  <Select>
+                    <SelectTrigger className="w-full" id="goldar">
+                      <SelectValue placeholder="Golongan Darah" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectGroup>
+                        <SelectLabel>Golongan Darah</SelectLabel>
+                        <SelectItem value="A">A</SelectItem>
+                        <SelectItem value="B">B</SelectItem>
+                        <SelectItem value="O">O</SelectItem>
+                        <SelectItem value="AB">AB</SelectItem>
+                      </SelectGroup>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+            </div>
+            <div className="mb-3">
+              <label htmlFor="nik" className="font-bold cursor-pointer hover:text-gray-500 duration-500">NIK</label>
+              <Input placeholder="NIK" className="mt-2" id="nik"/>
+            </div>
+            <div className="mb-3">
+              <label htmlFor="bpjs" className="font-bold cursor-pointer hover:text-gray-500 duration-500">No. BPJS</label>
+              <Input placeholder="No. BPJS" className="mt-2" id="bpjs"/>
+            </div>
+            <div className="mb-3">
+              <label htmlFor="notelp" className="font-bold cursor-pointer hover:text-gray-500 duration-500">No. Telepon</label>
+              <Input placeholder="No. Telepon" className="mt-2" type="tel" id="notelp"/>
+            </div>
+            <div className="mb-3">
                 <label htmlFor="userPassword" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Password</label>
-                <Input placeholder="Email" type="password" id="userPassword" className="mt-2"/>
+                <Input placeholder="Password" type="password" id="userPassword" className="mt-2"/>
+            </div>
+            <div className="mb-3">
+                <label htmlFor="userPasswordConfirmation" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Password Confirmation</label>
+                <Input placeholder="Password Confirmation" type="password" id="userPasswordConfirmation" className="mt-2"/>
             </div>
             <div className="flex items-center justify-center">
                 <MainButton text="Login"/>
