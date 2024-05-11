@@ -23,6 +23,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { Label } from "@/components/ui/label"
 
 
 const Page = () => {
@@ -32,21 +33,21 @@ const Page = () => {
         <div className="w-full p-10">
         <h1 className="text-2xl mb-5 text-center">Register</h1>
             <div className="mb-3">
-                <label htmlFor="userFullName" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Nama Lengkap</label>
+                <Label className="font-bold cursor-pointer hover:text-gray-500 duration-500" htmlFor="userFullName">Nama Lengkap</Label>
                 <Input placeholder="Nama Lengkap" id="userFullName" className="mt-2"/>
             </div>
             <div className="mb-3">
-                <label htmlFor="userEmail" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Email</label>
+                <Label className="font-bold cursor-pointer hover:text-gray-500 duration-500" htmlFor="userEmail">Email</Label>
                 <Input placeholder="Email" type="email" id="userEmail" className="mt-2"/>
             </div>
             <div className="mb-3">
             <div className="justify-between flex items-center gap-3">
               <div className="w-1/2">
-                <label htmlFor="userPlaceBirth" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Tempat Lahir</label>
+                <Label htmlFor="userPlaceBirth" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Tempat Lahir</Label>
                 <Input placeholder="Tempat Lahir" id="userPlaceBirth" className="mt-2"/>
               </div>
               <div className="w-1/2">
-              <label className="font-bold cursor-pointer hover:text-gray-500 duration-500" htmlFor="tgl_lahir">Tanggal Lahir</label>
+                <Label className="font-bold cursor-pointer hover:text-gray-500 duration-500" htmlFor="tgl_lahir">Tanggal Lahir</Label>
               <div className="mt-2">
                 <Popover>
                   <PopoverTrigger asChild id="tgl_lahir">
@@ -83,7 +84,7 @@ const Page = () => {
             <div className="mb-3">
               <div className="justify-between flex items-center gap-3">
                 <div className="w-1/2">
-                  <label htmlFor="userGender" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Jenis Kelamin</label>
+                  <Label htmlFor="userGender" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Jenis Kelamin</Label>
                   <Select>
                     <SelectTrigger className="w-full" id="userGender">
                       <SelectValue placeholder="Jenis Kelamin" />
@@ -98,7 +99,7 @@ const Page = () => {
                   </Select>
                 </div>
                 <div className="w-1/2">
-                  <label htmlFor="goldar" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Golongan Darah</label>
+                  <Label htmlFor="goldar" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Golongan Darah</Label>
                   <Select>
                     <SelectTrigger className="w-full" id="goldar">
                       <SelectValue placeholder="Golongan Darah" />
@@ -117,23 +118,23 @@ const Page = () => {
               </div>
             </div>
             <div className="mb-3">
-              <label htmlFor="nik" className="font-bold cursor-pointer hover:text-gray-500 duration-500">NIK</label>
+              <Label htmlFor="nik" className="font-bold cursor-pointer hover:text-gray-500 duration-500">NIK</Label>
               <Input placeholder="NIK" className="mt-2" id="nik"/>
             </div>
             <div className="mb-3">
-              <label htmlFor="bpjs" className="font-bold cursor-pointer hover:text-gray-500 duration-500">No. BPJS</label>
+              <Label htmlFor="bpjs" className="font-bold cursor-pointer hover:text-gray-500 duration-500">No. BPJS</Label>
               <Input placeholder="No. BPJS" className="mt-2" id="bpjs"/>
             </div>
             <div className="mb-3">
-              <label htmlFor="notelp" className="font-bold cursor-pointer hover:text-gray-500 duration-500">No. Telepon</label>
+              <Label htmlFor="notelp" className="font-bold cursor-pointer hover:text-gray-500 duration-500">No. Telepon</Label>
               <Input placeholder="No. Telepon" className="mt-2" type="tel" id="notelp"/>
             </div>
             <div className="mb-3">
-                <label htmlFor="userPassword" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Password</label>
+                <Label htmlFor="userPassword" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Password</Label>
                 <Input placeholder="Password" type="password" id="userPassword" className="mt-2"/>
             </div>
             <div className="mb-3">
-                <label htmlFor="userPasswordConfirmation" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Password Confirmation</label>
+                <Label htmlFor="userPasswordConfirmation" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Password Confirmation</Label>
                 <Input placeholder="Password Confirmation" type="password" id="userPasswordConfirmation" className="mt-2"/>
             </div>
             <div className="flex items-center justify-center">
