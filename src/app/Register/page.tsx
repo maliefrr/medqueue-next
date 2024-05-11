@@ -29,12 +29,13 @@ const Page = () => {
                 <label htmlFor="userEmail" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Email</label>
                 <Input placeholder="Email" type="email" id="userEmail" className="mt-2"/>
             </div>
-            <div className="mb-3 flex items-center gap-3">
-              <div>
+            <div className="mb-3">
+            <div className="justify-between flex items-center gap-3">
+              <div className="w-1/2">
                 <label htmlFor="userPlaceBirth" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Tempat Lahir</label>
                 <Input placeholder="Tempat Lahir" id="userPlaceBirth" className="mt-2"/>
               </div>
-              <div>
+              <div className="w-1/2">
               <label className="font-bold cursor-pointer hover:text-gray-500 duration-500">Tanggal Lahir</label>
               <div className="mt-2">
                 <Popover>
@@ -42,12 +43,12 @@ const Page = () => {
                     <Button
                       variant={"outline"}
                       className={cn(
-                        "w-[280px] justify-start text-left font-normal",
+                        "w-full justify-between px-5 text-left font-normal",
                         !date && "text-muted-foreground"
                       )}
                     >
+                      {date ? format(date, "PPP") : <span>Tanggal Lahir</span>}
                       <CalendarIcon className="mr-2 h-4 w-4" />
-                      {date ? format(date, "PPP") : <span>Pick a date</span>}
                     </Button>
                   </PopoverTrigger>
                   <PopoverContent className="w-auto p-0">
@@ -67,6 +68,7 @@ const Page = () => {
                   </Popover>
               </div>
               </div>
+            </div>
             </div>
             <div className="mb-3">
                 <label htmlFor="userPassword" className="font-bold cursor-pointer hover:text-gray-500 duration-500">Password</label>
