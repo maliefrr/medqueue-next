@@ -1,5 +1,5 @@
 "use client"
-import AuthLayout from "@/components/authLayout"
+import AuthLayout from "@/components/layouts/authLayout"
 import MainButton from "@/components/ui/MainButton"
 import { Input } from "@/components/ui/input"
 import Link from "next/link"

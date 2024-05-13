@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { Card, CardContent } from './ui/card'
+import { Card, CardContent } from '../ui/card'
 
 interface Props {
   children : ReactNode
