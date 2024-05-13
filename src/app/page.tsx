@@ -9,12 +9,12 @@ const page = () => {
     <FaskesLayout>
       <FaskesSidebar>
       <ul className="flex flex-col justify-center pl-5 h-full gap-2">
-          <Link href="/faskes/antrian/1" id="nav-antrian">
+          <Link href="/Faskes/antrian/1" id="nav-antrian">
             <div className="cursor-pointer p-2 max-w-[90%] rounded-lg">
               <li className="text-white text-xl">List Antrian</li>
             </div>
           </Link>
-          <Link href="/faskes/jadwal/1" id="nav-jadwal">
+          <Link href="/Faskes/jadwal/1" id="nav-jadwal">
             <div className="cursor-pointer p-2 max-w-[90%] rounded-lg">
               <li className="text-white text-xl ">Setting Jadwal</li>
             </div>
