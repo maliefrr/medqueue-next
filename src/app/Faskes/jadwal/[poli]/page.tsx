@@ -12,21 +12,21 @@ const page = () => {
           <Link href="/Faskes/jadwal/1" id="nav-umum">
             <div
               className={`cursor-pointer  p-2 max-w-[90%] rounded-lg`}>
-              <li className={`text-xl`}>
+              <li className={` text-white text-xl`}>
                 Poli Umum
               </li>
             </div>
           </Link>
           <Link href={"/Faskes/jadwal/2"} id="nav-gigi">
             <div className={`cursor-pointer  p-2 max-w-[90%] rounded-lg`}>
-              <li className={`text-xl`}>
+              <li className={` text-white text-xl`}>
                 Poli Gigi & Mulut
               </li>
             </div>
           </Link>
           <Link href="/Faskes/jadwal/3" id="nav-kia">
             <div className={`cursor-pointer  p-2 max-w-[90%] rounded-lg`}>
-              <li className={`text-xl`}>
+              <li className={` text-white text-xl`}>
                 Poli KIA
               </li>
             </div>
@@ -34,7 +34,7 @@ const page = () => {
           <Link href="/Faskes/jadwal/4" id="nav-ugd">
             <div
               className={`cursor-pointer  p-2 max-w-[90%] rounded-lg`}>
-              <li className={`text-xl`}>
+              <li className={` text-white text-xl`}>
                 UGD
               </li>
             </div>
@@ -43,7 +43,7 @@ const page = () => {
           <Link href="/Faskes/jadwal/add" id="nav-add-schedule">
             <div
               className={`cursor-pointer  p-2 max-w-[90%] rounded-lg`}>
-              <li className={`text-xl`}>
+              <li className={` text-white text-xl`}>
                 Tambah Jadwal
               </li>
             </div>
