@@ -1,8 +1,11 @@
+import FaskesLayout from "@/components/layouts/faskesLayout"
+
 const page = () => {
   return (
-    <div>
+    <FaskesLayout>
       <h1>Home Pages</h1>
-    </div>
+      <h1>Home Pages</h1>
+    </FaskesLayout>
   )
 }
 
